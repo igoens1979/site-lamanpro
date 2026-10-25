@@ -1,8 +1,8 @@
 export default function Hero() {
   return (
     <section className="relative w-full overflow-hidden bg-gradient-to-b from-surface-container-low/60 via-surface to-background pb-space-xl pt-space-lg">
-      <div className="pointer-events-none absolute -top-24 right-1/4 h-96 w-96 rounded-full bg-primary-container/10 blur-3xl"></div>
-      <div className="pointer-events-none absolute top-48 left-10 h-80 w-80 rounded-full bg-secondary-container/20 blur-3xl"></div>
+      <div className="pointer-events-none hidden lg:block absolute -top-24 right-1/4 h-96 w-96 rounded-full bg-primary-container/10 blur-3xl"></div>
+      <div className="pointer-events-none hidden lg:block absolute top-48 left-10 h-80 w-80 rounded-full bg-secondary-container/20 blur-3xl"></div>
       <div className="max-w-[1280px] mx-auto px-margin-mobile md:px-margin relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
           <div className="lg:col-span-7 flex flex-col gap-space-md">
@@ -89,7 +89,7 @@ export default function Hero() {
                     </div>
                   </div>
                 </div>
-                <div className="absolute -top-6 -right-4 w-28 bg-surface-container-lowest p-1.5 rounded-xl shadow-xl hidden sm:block">
+                <div className="absolute -top-6 -right-4 w-28 bg-surface-container-lowest p-1.5 rounded-xl shadow-xl sm:block">
                   <div className="rounded-lg overflow-hidden relative">
                     <img
                       className="w-full h-32 object-cover"

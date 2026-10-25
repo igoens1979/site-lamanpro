@@ -51,7 +51,7 @@ export default function CaraKerja() {
             Proses terarah dan transparan dari konsep hingga online
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-space-sm relative">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-space-sm relative">
           {steps.map((s) => (
             <div
               key={s.number}
