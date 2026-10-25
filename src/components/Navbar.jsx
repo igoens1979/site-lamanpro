@@ -1,7 +1,10 @@
-import { useState } from 'react';
+import { useState, useRef, useEffect, useCallback } from 'react';
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [hoverIndex, setHoverIndex] = useState(0);
+  const pillStyle = useRef({ left: 0, width: 0, top: 0, height: 0 });
+  const linkRefs = useRef([]);
 
   const navLinks = [
     { path: 'beranda', label: 'Beranda', active: true },
@@ -12,6 +15,27 @@ export default function Navbar() {
     { path: 'faq', label: 'FAQ' },
     { path: 'kontak', label: 'Kontak' },
   ];
+
+  const activeIndex = navLinks.findIndex((l) => l.active);
+
+  const updatePill = useCallback((index) => {
+    if (index < 0) return;
+    const el = linkRefs.current[index];
+    if (!el) return;
+    const rect = el.getBoundingClientRect();
+    const navRect = el.parentElement?.getBoundingClientRect();
+    if (!navRect) return;
+    pillStyle.current = {
+      left: rect.left - navRect.left,
+      width: rect.width,
+      top: rect.top - navRect.top,
+      height: rect.height,
+    };
+  }, []);
+
+  useEffect(() => {
+    updatePill(hoverIndex);
+  }, [hoverIndex, updatePill]);
 
   return (
     <header className="fixed top-0 inset-x-0 z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)] transition-all duration-200">
@@ -28,18 +52,31 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Navigation */}
-        <nav className="hidden xl:flex items-center gap-1 bg-surface-container-low/60 backdrop-blur-md rounded-xl px-1 py-0.5 border border-outline-variant/30 shadow-sm">
-          {navLinks.map((link) => (
+        <nav className="hidden xl:flex items-center gap-1 bg-surface-container-low/40 backdrop-blur-md rounded-xl px-1 py-0.5 border border-outline-variant/30 shadow-sm relative">
+          {/* Semi-transparent pill behind active/hovered item */}
+          <div
+            className="absolute inset-0 bg-surface-container/60 backdrop-blur-sm rounded-lg transition-all duration-300 ease-out pointer-events-none"
+            style={{
+              left: pillStyle.current.left,
+              width: pillStyle.current.width,
+              top: pillStyle.current.top,
+              height: pillStyle.current.height,
+            }}
+          />
+          {navLinks.map((link, index) => (
             <a
               key={link.path}
+              ref={(el) => (linkRefs.current[index] = el)}
               aria-current={link.active ? 'page' : undefined}
-              className={`transition-all duration-200 py-1 px-3 rounded-lg ${
-                link.active
-                  ? 'bg-surface-container text-primary font-bold shadow-sm'
-                  : 'font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container hover:shadow-sm'
+              className={`relative z-10 transition-colors duration-200 py-1 px-3 rounded-lg font-label-lg text-label-lg ${
+                link.active || hoverIndex === index
+                  ? 'text-primary font-bold'
+                  : 'text-on-surface-variant hover:text-primary'
               }`}
               data-path={link.path}
               href="#"
+              onMouseEnter={() => setHoverIndex(index)}
+              onMouseLeave={() => setHoverIndex(activeIndex)}
             >
               {link.label}
             </a>
