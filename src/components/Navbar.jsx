@@ -120,7 +120,7 @@ export default function Navbar() {
       {/* Mobile Drawer */}
       {mobileOpen && (
         <div
-          className="xl:hidden fixed inset-0 z-50 bg-surface-container-low backdrop-blur-sm"
+          className="xl:hidden fixed inset-0 z-[60] bg-white backdrop-blur-sm overflow-y-auto"
           onClick={() => setMobileOpen(false)}
         >
           <div className="absolute top-0 right-0 p-4">
