@@ -120,12 +120,12 @@ export default function Navbar() {
       {/* Mobile Drawer */}
       {mobileOpen && (
         <div
-          className="xl:hidden fixed inset-0 z-[60] bg-white backdrop-blur-sm overflow-y-auto"
+          className="xl:hidden fixed inset-0 z-[60] bg-black/80 backdrop-blur-sm overflow-y-auto"
           onClick={() => setMobileOpen(false)}
         >
           <div className="absolute top-0 right-0 p-4">
             <button
-              className="p-2 rounded-lg text-on-surface hover:bg-surface-container-low/50 transition-colors"
+              className="p-2 rounded-lg text-white hover:bg-white/10 transition-colors"
               onClick={() => setMobileOpen(false)}
               aria-label="Tutup menu"
             >
@@ -138,8 +138,8 @@ export default function Navbar() {
                 key={link.path}
                 className={`block px-4 py-3 rounded-lg text-lg font-label-lg transition-colors ${
                   link.active
-                    ? 'bg-surface-container text-primary font-bold'
-                    : 'text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low/80'
+                    ? 'bg-white/10 text-white font-bold'
+                    : 'text-white hover:bg-white/10'
                 }`}
                 data-path={link.path}
                 href="#"
