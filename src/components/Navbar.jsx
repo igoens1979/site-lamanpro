@@ -120,7 +120,7 @@ export default function Navbar() {
       {/* Mobile Drawer */}
       {mobileOpen && (
         <div
-          className="xl:hidden fixed inset-0 z-50 bg-surface-container-low/95 backdrop-blur-sm"
+          className="xl:hidden fixed inset-0 z-50 bg-surface-container-low backdrop-blur-sm"
           onClick={() => setMobileOpen(false)}
         >
           <div className="absolute top-0 right-0 p-4">
@@ -139,7 +139,7 @@ export default function Navbar() {
                 className={`block px-4 py-3 rounded-lg text-lg font-label-lg transition-colors ${
                   link.active
                     ? 'bg-surface-container text-primary font-bold'
-                    : 'text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low/50'
+                    : 'text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low/80'
                 }`}
                 data-path={link.path}
                 href="#"
