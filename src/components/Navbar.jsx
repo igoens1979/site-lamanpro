@@ -39,7 +39,7 @@ export default function Navbar() {
 
   return (
     <>
-      <header className="fixed top-0 inset-x-0 z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)] transition-all duration-200">
+      <header className="fixed top-0 inset-x-0 z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)] transition-all duration-200 overflow-x-hidden">
         <div className="h-20 max-w-[1280px] mx-auto px-margin-mobile md:px-margin flex items-center justify-between gap-gutter">
           <div className="flex items-center gap-space-sm">
             <a
@@ -53,7 +53,7 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden xl:flex items-center gap-1 bg-surface-container-low/40 backdrop-blur-md rounded-xl px-1 py-0.5 border border-outline-variant/30 shadow-sm relative">
+          <nav className="hidden lg:flex items-center gap-1 bg-surface-container-low/40 backdrop-blur-md rounded-xl px-1 py-0.5 border border-outline-variant/30 shadow-sm relative">
             {/* Semi-transparent pill behind active/hovered item */}
             <div
               className="absolute inset-0 bg-surface-container/60 backdrop-blur-sm rounded-lg transition-all duration-300 ease-out pointer-events-none"
@@ -85,7 +85,7 @@ export default function Navbar() {
           </nav>
 
           {/* Desktop CTA + Profile */}
-          <div className="hidden xl:flex items-center gap-space-sm">
+          <div className="hidden lg:flex items-center gap-space-sm">
             <a
               className="group inline-flex items-center gap-space-xs bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg px-space-md py-space-sm rounded-lg shadow-[0_4px_12px_rgba(29,78,216,0.25)] transition-all duration-200 transform hover:-translate-y-0.5"
               data-path="konsultasi-gratis"
@@ -107,7 +107,7 @@ export default function Navbar() {
 
           {/* Mobile Menu Toggle */}
           <button
-            className="xl:hidden p-2 rounded-lg text-on-surface hover:bg-surface-container-low/50 transition-colors"
+            className="lg:hidden p-2 rounded-lg text-on-surface hover:bg-surface-container-low/50 transition-colors"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label="Buka menu"
             aria-expanded={mobileOpen}
@@ -122,7 +122,7 @@ export default function Navbar() {
       {/* Mobile Backdrop */}
       {mobileOpen && (
         <div
-          className="xl:hidden fixed inset-0 z-[55] bg-black/30 backdrop-blur-sm"
+          className="lg:hidden fixed inset-0 z-[55] bg-black/30 backdrop-blur-sm"
           onClick={() => setMobileOpen(false)}
         />
       )}
@@ -130,7 +130,7 @@ export default function Navbar() {
       {/* Mobile Drawer */}
       {mobileOpen && (
         <div
-          className="xl:hidden fixed top-20 left-0 right-0 z-[60] bg-gradient-to-b from-primary-container/95 via-surface-container/95 to-surface-container-low/95 backdrop-blur-md border-b border-outline-variant/30 shadow-xl overflow-y-auto max-h-[60vh]"
+          className="lg:hidden fixed top-20 left-0 right-0 z-[60] bg-gradient-to-b from-primary-container/95 via-surface-container/95 to-surface-container-low/95 backdrop-blur-md border-b border-outline-variant/30 shadow-xl overflow-y-auto max-h-[60vh]"
           onClick={(e) => e.stopPropagation()}
         >
           <div className="absolute top-0 right-0 p-4">

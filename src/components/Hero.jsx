@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="relative w-full overflow-hidden bg-gradient-to-b from-surface-container-low/60 via-surface to-background pb-space-xl pt-space-lg">
+    <section className="relative w-full overflow-x-hidden overflow-hidden bg-gradient-to-b from-surface-container-low/60 via-surface to-background pb-space-xl pt-space-lg">
       <div className="pointer-events-none hidden lg:block absolute -top-24 right-1/4 h-96 w-96 rounded-full bg-primary-container/10 blur-3xl"></div>
       <div className="pointer-events-none hidden lg:block absolute top-48 left-10 h-80 w-80 rounded-full bg-secondary-container/20 blur-3xl"></div>
       <div className="max-w-[1280px] mx-auto px-margin-mobile md:px-margin relative z-10">
@@ -45,7 +45,7 @@ export default function Hero() {
               </a>
             </div>
           </div>
-          <div className="lg:col-span-5 relative mt-space-lg lg:mt-0">
+          <div className="lg:col-span-5 relative mt-space-lg lg:mt-0 overflow-x-hidden">
             <div className="relative mx-auto w-full max-w-md lg:max-w-none">
               <div className="relative rounded-2xl bg-inverse-surface p-3 shadow-2xl">
                 <div className="flex items-center justify-between pb-2 px-2">

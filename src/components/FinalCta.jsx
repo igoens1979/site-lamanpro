@@ -1,6 +1,6 @@
 export default function FinalCta() {
   return (
-    <section className="w-full py-space-xl bg-surface">
+    <section className="w-full py-space-xl bg-surface overflow-x-hidden">
       <div className="max-w-[1280px] mx-auto px-margin-mobile md:px-margin">
         <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-primary to-inverse-surface text-on-primary p-space-lg md:p-space-xl shadow-2xl">
           <div className="pointer-events-none absolute -bottom-16 -right-16 w-80 h-80 rounded-full bg-secondary-container/20 blur-3xl"></div>

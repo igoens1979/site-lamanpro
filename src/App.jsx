@@ -2,7 +2,7 @@ import { Navbar, Hero, JenisLayanan, NilaiKeunggulan, LayananSegmen, CaraKerja, 
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background overflow-x-hidden">
       <Navbar />
       <main className="w-full pt-20 bg-background min-h-screen">
         <div className="flex flex-col w-full">

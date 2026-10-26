@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="w-full bg-surface-container-low text-on-surface mt-space-xl shadow-[0_-1px_6px_rgba(0,0,0,0.02)]">
+    <footer className="w-full bg-surface-container-low text-on-surface mt-space-xl shadow-[0_-1px_6px_rgba(0,0,0,0.02)] overflow-x-hidden">
       <div className="max-w-[1280px] mx-auto px-margin-mobile md:px-margin pt-space-xl pb-space-lg">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter">
           <div className="lg:col-span-4 flex flex-col gap-space-md">
