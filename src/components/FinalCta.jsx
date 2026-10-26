@@ -22,7 +22,7 @@ export default function FinalCta() {
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-sm shrink-0">
               <a
                 className="group inline-flex items-center justify-center gap-space-sm bg-[#22c55e] hover:bg-[#16a34a] text-white font-label-lg text-label-lg px-space-lg py-4 rounded-xl shadow-xl transition-all duration-200 transform hover:-translate-y-1"
-                href="https://wa.me/628123456789?text=Halo%20CakrawalaWeb,%20saya%20ingin%20konsultasi%20pembuatan%20website"
+                href="https://wa.me/6288991593993?text=Halo%20LamanPro,%20saya%20ingin%20konsultasi%20pembuatan%20website"
                 rel="noopener noreferrer"
                 target="_blank"
               >

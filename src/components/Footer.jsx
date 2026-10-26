@@ -18,7 +18,7 @@ export default function Footer() {
             <div className="pt-space-xs">
               <a
                 className="inline-flex items-center gap-space-xs bg-secondary-container hover:bg-secondary text-on-secondary-fixed hover:text-on-secondary font-label-lg text-label-lg px-space-md py-space-sm rounded-lg shadow-sm transition-all duration-200"
-                href="https://wa.me/628123456789"
+                href="https://wa.me/6288991593993"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -86,7 +86,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-space-xl pt-space-md bg-surface-container/50 rounded-xl px-space-md flex flex-col sm:flex-row items-center justify-between gap-space-sm text-on-surface-variant font-body-sm text-body-sm">
-          <p className="">© 2025 PT Cakrawala Digital Rekayasa. Hak Cipta Dilindungi.</p>
+          <p className="">© 2026 LamanPro. Hak Cipta Dilindungi.</p>
           <div className="flex items-center gap-space-md">
             <a className="hover:text-on-surface transition-colors" data-path="kebijakan-privasi" href="#">
               Kebijakan Privasi

@@ -89,7 +89,7 @@ export default function Navbar() {
             <a
               className="group inline-flex items-center gap-space-xs bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg px-space-md py-space-sm rounded-lg shadow-[0_4px_12px_rgba(29,78,216,0.25)] transition-all duration-200 transform hover:-translate-y-0.5"
               data-path="konsultasi-gratis"
-              href="https://wa.me/628123456789"
+              href="https://wa.me/6288991593993"
               rel="noopener noreferrer"
               target="_blank"
             >
@@ -163,7 +163,7 @@ export default function Navbar() {
             <a
               className="group inline-flex items-center justify-center gap-space-xs bg-white text-primary font-label-lg text-label-lg px-4 py-3 rounded-xl shadow-lg transition-all duration-200 w-full hover:bg-primary-container"
               data-path="konsultasi-gratis"
-              href="https://wa.me/628123456789"
+              href="https://wa.me/6288991593993"
               rel="noopener noreferrer"
               target="_blank"
               onClick={() => setMobileOpen(false)}

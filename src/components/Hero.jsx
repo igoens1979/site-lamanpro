@@ -24,7 +24,7 @@ export default function Hero() {
             <div className="flex flex-wrap items-center gap-space-sm pt-space-xs">
               <a
                 className="group inline-flex items-center gap-space-xs bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg px-space-lg py-3 rounded-xl shadow-md shadow-primary-container/20 transition-all duration-200 transform hover:-translate-y-0.5"
-                href="https://wa.me/628123456789"
+                href="https://wa.me/6288991593993"
                 rel="noopener noreferrer"
                 target="_blank"
               >
