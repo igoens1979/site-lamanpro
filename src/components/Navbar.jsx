@@ -120,7 +120,7 @@ export default function Navbar() {
       {/* Mobile Drawer */}
       {mobileOpen && (
         <div
-          className="xl:hidden fixed inset-0 z-[60] bg-black/80 backdrop-blur-sm overflow-y-auto"
+          className="xl:hidden fixed inset-0 z-[60] bg-gradient-to-b from-primary via-inverse-surface to-black backdrop-blur-sm overflow-y-auto"
           onClick={() => setMobileOpen(false)}
         >
           <div className="absolute top-0 right-0 p-4">
@@ -151,7 +151,7 @@ export default function Navbar() {
           </nav>
           <div className="px-margin-mobile pb-10 pt-6 space-y-3">
             <a
-              className="group inline-flex items-center justify-center gap-space-xs bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg px-4 py-3 rounded-xl shadow-[0_4px_12px_rgba(29,78,216,0.25)] transition-all duration-200 w-full"
+              className="group inline-flex items-center justify-center gap-space-xs bg-white text-primary font-label-lg text-label-lg px-4 py-3 rounded-xl shadow-lg transition-all duration-200 w-full hover:bg-primary-container"
               data-path="konsultasi-gratis"
               href="https://wa.me/628123456789"
               rel="noopener noreferrer"
@@ -163,10 +163,8 @@ export default function Navbar() {
                 arrow_forward
               </span>
             </a>
-            <div className="flex items-center gap-2 w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0 shadow-sm">
-              <span className="material-symbols-outlined text-on-primary text-[18px]">
-                person
-              </span>
+            <div className="flex items-center gap-2 w-8 h-8 rounded-full bg-white text-primary flex items-center justify-center shrink-0 shadow-sm">
+              <span className="material-symbols-outlined text-[18px]">person</span>
             </div>
           </div>
         </div>
