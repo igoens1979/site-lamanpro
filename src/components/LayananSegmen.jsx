@@ -40,7 +40,7 @@ const segments = [
     tagBg: 'bg-surface-container',
     tagColor: 'text-primary',
     tagIcon: 'person',
-    tagLabel: 'Kreator &amp; Konsultan',
+    tagLabel: 'Kreator & Konsultan',
     title: 'Untuk profesional dan individu',
     desc: 'Tampilkan keahlian, pengalaman, karya, dan informasi kontak melalui website portofolio atau personal brand.',
     features: [
