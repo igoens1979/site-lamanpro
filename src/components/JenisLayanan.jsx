@@ -17,7 +17,7 @@ const cards = [
     iconColor: 'text-secondary',
     badge: 'UMKM Juara',
     badgeBg: 'bg-secondary-container/30 text-on-secondary-container',
-    title: 'Website UMKM &amp; katalog produk',
+    title: 'Website UMKM & katalog produk',
     desc: 'Katalog produk online ringkas dan estetik dengan integrasi order instan langsung terhubung ke WhatsApp bisnis dan kanal pembayaran cepat.',
     features: 'Fitur: Galeri Produk, Tombol Chat, Filter Harga',
     arrowColor: 'text-secondary',
@@ -71,9 +71,9 @@ export default function JenisLayanan() {
           <div className="max-w-2xl">
             <div className="inline-flex items-center gap-1.5 text-primary-container font-label-md text-label-md font-semibold tracking-wider uppercase mb-1">
               <span className="material-symbols-outlined text-[18px]">category</span>
-              <span className="">Kategori Produk &amp; Solusi</span>
+              <span className="">Kategori Produk & Solusi</span>
             </div>
-            <h2 className="font-headline-lg text-headline-md md:text-headline-lg font-bold text-on-surface whitespace-nowrap">
+            <h2 className="font-headline-lg text-headline-md md:text-headline-lg font-bold text-on-surface">
               Website yang bisa kami bantu buat:
             </h2>
           </div>

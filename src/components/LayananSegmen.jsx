@@ -4,13 +4,13 @@ const segments = [
     tagBg: 'bg-surface-container',
     tagColor: 'text-primary',
     tagIcon: 'business_center',
-    tagLabel: 'Korporasi &amp; Enterprise',
+    tagLabel: 'Korporasi & Enterprise',
     title: 'Untuk perusahaan',
     desc: 'Tampilkan profil, layanan, portofolio, dan informasi kontak perusahaan dalam satu website profesional.',
     features: [
-      'Struktur halaman teratur &amp; multi-bahasa',
-      'Optimasi SEO lokal &amp; global',
-      'Keamanan sertifikat SSL &amp; audit performa',
+      'Struktur halaman teratur & multi-bahasa',
+      'Optimasi SEO lokal & global',
+      'Keamanan sertifikat SSL & audit performa',
     ],
     ctaLabel: 'Konsultasi Profil Korporat',
     ctaHref: 'https://wa.me/6288991593993?text=Halo%20LamanPro,%20saya%20tertarik%20pembuatan%20website%20Perusahaan',
@@ -28,7 +28,7 @@ const segments = [
     features: [
       'Direct WhatsApp Click-to-Order',
       'Katalog produk mudah diperbarui',
-      'Hemat biaya server &amp; maintenance mudah',
+      'Hemat biaya server & maintenance mudah',
     ],
     ctaLabel: 'Konsultasi Paket UMKM',
     ctaHref: 'https://wa.me/6288991593993?text=Halo%20LamanPro,%20saya%20ingin%20tanya%20website%20katalog%20UMKM',
@@ -45,7 +45,7 @@ const segments = [
     desc: 'Tampilkan keahlian, pengalaman, karya, dan informasi kontak melalui website portofolio atau personal brand.',
     features: [
       'Desain berkarakter sesuai persona Anda',
-      'Integrasi tautan media sosial &amp; formulir pesan',
+      'Integrasi tautan media sosial & formulir pesan',
       'Optimasi pencarian Google nama Anda',
     ],
     ctaLabel: 'Konsultasi Personal Brand',
@@ -66,10 +66,10 @@ export default function LayananSegmen() {
           <h2 className="font-headline-lg text-headline-md md:text-headline-lg font-bold text-on-surface mt-1">
             Layanan untuk berbagai kebutuhan
           </h2>
-          <p className="font-body-md text-body-md text-on-surface-variant mt-space-xs whitespace-nowrap">
-            Solusi terarah yang dirancang persis dengan skala dan tujuan operasional masing-masing
-            jenis organisasi.
-          </p>
+<p className="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+          Solusi terarah yang dirancang persis dengan skala dan tujuan operasional masing-masing
+          jenis organisasi.
+        </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter">
           {segments.map((s) => (

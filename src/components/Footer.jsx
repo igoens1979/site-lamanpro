@@ -42,10 +42,10 @@ export default function Footer() {
                 Modern E-Commerce Engine
               </li>
               <li className="hover:text-primary transition-colors cursor-pointer">
-                API &amp; Cloud Integration
+                API & Cloud Integration
               </li>
               <li className="hover:text-primary transition-colors cursor-pointer">
-                Web Performance &amp; SEO Audit
+                Web Performance & SEO Audit
               </li>
             </ul>
           </div>
@@ -64,7 +64,7 @@ export default function Footer() {
                 Portofolio
               </a>
               <a className="hover:text-primary transition-colors" data-path="harga" href="#">
-                Paket &amp; Harga
+                Paket & Harga
               </a>
               <a className="hover:text-primary transition-colors" data-path="faq" href="#">
                 Pertanyaan (FAQ)
@@ -73,7 +73,7 @@ export default function Footer() {
           </div>
           <div className="lg:col-span-3 flex flex-col gap-space-sm">
             <h3 className="font-headline-sm text-headline-sm text-on-surface font-semibold">
-              Kantor &amp; Kontak
+              Kantor & Kontak
             </h3>
             <p className="font-body-md text-body-md text-on-surface-variant">
               Perum Khayra Residence C-19<br />

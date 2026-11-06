@@ -9,7 +9,7 @@ export default function Hero() {
             <div className="inline-flex items-center gap-space-xs w-fit bg-secondary-container/40 text-on-secondary-container px-3.5 py-1.5 rounded-full shadow-sm">
               <span className="inline-block w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
               <span className="font-label-sm text-label-sm tracking-wide uppercase">
-                Solusi Pembuatan Website Terpercaya &amp; Siap Pakai
+                Solusi Pembuatan Website Terpercaya & Siap Pakai
               </span>
             </div>
             <h1 className="font-display text-headline-lg lg:text-display text-on-surface font-extrabold tracking-tight leading-tight">
@@ -80,7 +80,7 @@ export default function Hero() {
                           Arsitektur Web Terintegrasi
                         </p>
                         <p className="font-body-sm text-[12px] text-surface-variant">
-                          Optimal di Desktop, Tablet, &amp; Ponsel
+                          Optimal di Desktop, Tablet, & Ponsel
                         </p>
                       </div>
                       <span className="bg-primary-container px-2.5 py-1 rounded-full font-label-sm text-label-sm">
